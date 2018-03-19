@@ -5,6 +5,7 @@ import numpy as np
 from scipy.interpolate import interp1d
 from scipy.ndimage import map_coordinates
 import cv2
+import os
 
 
 def stereographic_proj(phi, theta):
@@ -98,9 +99,9 @@ if __name__ == "__main__":
         im2=ax2.imshow(segment==segment_index, cmap='Greys_r')
         ax2.axis('off')
         
-        filename = '/home/tomosys/Documents/ECP/5-8-17 out 2/Band/'+str(i)+'band.png'
+        filename = os.getcwd() +'/Band/'+str(i)+'band.png'
         fig.savefig(filename, bbox_inches='none') 
         plt.close(fig)
         
-        filename = '/home/tomosys/Documents/ECP/5-8-17 out 2/Band/'+str(i)+'band.npy'  
+        filename = os.getcwd()+'/Band/'+str(i)+'band.npy'  
         np.save(filename, band_out)
