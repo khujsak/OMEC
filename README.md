@@ -13,11 +13,8 @@ Currently tested with:
 ```
 python 3.5.3
 openCV 3.30
-multiprocess 0.70.5
 numpy 1.11.3
-scikit-learn 0.18.1
-scikit-image 0.12.3
-h5py 2.6.0
+scipy 1.0.0
 ```
 
 ## Authors
