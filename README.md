@@ -1,6 +1,6 @@
 # Orientation Mapping using Electron Channeling - Computer Vision Approach
 
-This is a series of scripts to reproduce our work aligning and reconstructing 3D orientation maps from channeling image series on a stage-rocked specimen.  Align will load all of the images in the current directory and bring them on to a common coordinate frame using the SIFT implementation in openCV.  MakeBand will then load a keyed segementation from these images (msot often found using watershed) and produce a band map for every crystal in the polycrystalline sample.
+This is a series of scripts to reproduce our work aligning and reconstructing 3D orientation maps from channeling image series on a stage-rocked specimen.  Align will load all of the images in the current directory and bring them on to a common coordinate frame using the SIFT implementation in openCV.  MakeBand will then load a keyed segementation from these images (most often found using watershed) and produce a band map for every crystal in the polycrystalline sample.
 
 ## Getting Started
 
